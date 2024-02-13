@@ -1,0 +1,101 @@
+/* Reset de estilos para garantir consistência entre navegadores */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+html,
+ol,
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+
+
+/* Estilos adicionais conforme necessário */
+
+
+.bg-color-principal {
+    background-color: #483D8B;
+}
+
+.txt-color-principal {
+    color: white;
+}
+
+.card-color {
+    background-color: #FDE4C9;
+}
+.exibir{
+    display: none !important;
+}
+
+/* Media query para telas menores ou iguais a 768 pixels de largura */
+@media only screen and (max-width: 768px) {
+    /* Esconder coluna "Chamado" */
+    .chamado,
+    .chamado + th {
+        display: none !important;
+    }
+
+    /* Esconder coluna "Status" */
+    .status,
+    .status + th {
+        display: none !important;
+    }
+
+    /* Exibir botão "Exibir" */
+    .exibir {
+        display: block !important;
+    }
+}
+
+/* Media query para telas menores ou iguais a 450 pixels de largura */
+@media only screen and (max-width: 450px) {
+    /* Esconder coluna "Problema" */
+    .Problema,
+    .Problema + th {
+        display: none !important;
+    }
+
+    /* Esconder coluna "Matrícula" */
+    .matricula,
+    .matricula + th {
+        display: none !important;
+    }
+}
+
+
+/* login */
+.body-login {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #483D8B, #9f9fee);
+  }
+
+.centro-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralize os itens horizontalmente dentro do form */
+  }
+
+  .linha-login{
+
+    width: 500px;
+    min-height: 700px;
+    
+  }
+  .card-form-login{
+    background: linear-gradient(to bottom, #938cc2, #4b0082);
+    color: white;
+  }
